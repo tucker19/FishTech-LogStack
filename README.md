@@ -1,2 +1,4 @@
 # FishTech LogStack
  FishTech Skills Assessment
+
+For ths assessment I used the input system of a syslog on a random port and from there I feed all data into a filter. Within this filter I have created a few custom pattern definitions with each of the different sections. Then at the end of the Grok I match based off those patterns. I then have a short if else block to change the numerical severity to a word. I assumed a 4 level of severity as 1 being High and 4 being Low. After the transfermation I output to JSON with a standard stdout. The input could be anything but within the Filter layer is where it is important with regular expressions the ability to easily pull data out. I did test these on a online tool. From the document I also assumed the output should be JSON even thought it said we could use anything. 
